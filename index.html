@@ -15,18 +15,31 @@
     <aside class="sidebar">
         <div>
             <nav class="link-column">
-                <a href="#about-me">
-                    <img class="aboutme" src="./assets/images/about-me.png" alt="Faceless and armless upper torso with question mark on stomach black icon">
-                </a>
-                <a href="#my-work">
-                    <img class="mywork" src="./assets/images/my-work.png" alt="Lightbulb black icon">
-                </a>
-                <a href="#contact">
-                <img class="contact" src="./assets/images/contact.png" alt="Contact book with faceless and armless upper torso black icon">
-                </a>
-                <a href="#resume">
-                    <img class="resume" src="./assets/images/resume.png" alt="Sheet of paper with women torso and lines below, and a magnifiying glass containing a check mark black icon">
-                </a>
+                <ul class="navList">
+                    <li>
+                        <a href="#about-me">
+                            <img class="aboutme" src="./assets/images/about-me.png" alt="Faceless and armless upper torso with question mark on stomach black icon">
+                            <p class="hidden">About Me</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects">
+                            <img class="mywork" src="./assets/images/my-work.png" alt="Lightbulb black icon">
+                            <p class="hidden">Projects</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <img class="contact" src="./assets/images/contact.png" alt="Contact book with faceless and armless upper torso black icon">
+                            <p class="hidden">Contact</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#resume" class="myResume">
+                            <img class="resume" src="./assets/images/resume.png" alt="Sheet of paper with women torso and lines below, and a magnifiying glass containing a check mark black icon">
+                            <p class="hidden">Resume</p>
+                        </a>
+                    </li>
             </nav>
         </div>
     </aside>
@@ -34,7 +47,9 @@
     <header>
         <img class="profileImage" src="./assets/images/profile-image.jpg" alt="Practice image of Cassandra Cunningham">
         <div class="myName">
-            <h2>Cassandra Cunningham</h2>
+            <h2 class="firstName">Cassandra<br>Cunningham</br><br>"Web Developer"</br>
+            </h2>
+            
         </div>
 
     </header>
@@ -55,24 +70,28 @@
         </section>
 
         <section>
-                <div id="my-work"> 
+                <div id="projects"> 
                     <h3>
                         MY WORK
                     </h3>
                 </div>
                 
                 <figure class="flexRow">
-                    <div class="project">
-                        
+                    <div class="project1">
+                        <h4>Project 1</h4>
+                        <img class="project1-img" src="./assets/images/project-1.jpg" alt="Laptop with color code is centered in photo on desk. Photo by Matthew Fournier on Unsplash.">
                     </div>
                     <div class="project">
-
+                        <h4>Project 2</h4>
+                        <img class="project-img" src="./assets/images/project-2.jpg" alt="Color code magnified and sides are blurry. Photo by Ilya Pavlov on Unsplash.">
                     </div>
                     <div class="project">
-
+                        <h4>Project 3</h4>
+                        <img class="project-img" src="./assets/images/project-3.jpg" alt="White wall office with black desk, laptop in foreground (code on it) and large screen behind it on the desk (website on it). Photo by Christopher Gower on Unsplash.">
                     </div>
                     <div class="project">
-
+                        <h4>Project 4</h4>
+                        <img class="project-img" src="./assets/images/project-4.jpg" alt="Laptop with code on it partially visibile on right side of photo with container of pens to the left . Photo by AltumCode on Unsplash.">
                     </div>
                 </figure>
         </section>
