@@ -121,19 +121,19 @@ aside div {
     margin-bottom: 10px;   
 }
 
-a p {
+.icons p {
     height: 57px;
 }
 
-a .hidden {
+.icons .hidden {
     display: none;    
 }
 
-a:hover img {
+.icons:hover img {
     display: none;
 }
 
-a:hover .hidden {
+.icons:hover .hidden {
     display: block;
     margin-left: 5px;
     margin-top: 10px;
@@ -168,7 +168,7 @@ section h3::after {
 .flexRow {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -177,7 +177,7 @@ section h3::after {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 50vh;
+    height: 65%;
     margin-bottom: 30px;
 }
 
@@ -203,10 +203,22 @@ section h3::after {
     display: inline-block;
 }
 
-.project1 .project1-img,
-.project .project-img {
+.project1 a .project1-img,
+.project a .project-img {
     width: 100%;
     height: 100%;
+}
+
+#contact p a:link {
+    color: var(--white);
+}
+
+#contact p a:hover {
+    color: red;
+}
+
+#contact p a:visited {
+    color: var(--black);
 }
 
 footer {
