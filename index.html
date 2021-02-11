@@ -17,6 +17,12 @@
             <nav class="link-column">
                 <ul class="navList">
                     <li>
+                        <a class="icons" href="#header">
+                            <img class="home" src="./assets/images/home.png" alt="House black icon">
+                            <p class="hidden">Home</p>
+                        </a>
+                    </li>
+                    <li>
                         <a class="icons" href="#about-me">
                             <img class="aboutme" src="./assets/images/about-me.png" alt="Faceless and armless upper torso with question mark on stomach black icon">
                             <p class="hidden">About Me</p>
@@ -40,16 +46,15 @@
                             <p class="hidden">Resume</p>
                         </a>
                     </li>
+                </ul>
             </nav>
         </div>
     </aside>
     
-    <header>
-        <img class="profileImage" src="./assets/images/profile-image.jpg" alt="Practice image of Cassandra Cunningham">
+    <header id="header">
+        <img class="profileImage" src="./assets/images/profile-image.jpg" alt="Image of Cassandra Cunningham">
         <div class="myName">
-            <h2 class="firstName">Cassandra<br>Cunningham</br><br>"Web Developer"</br>
-            </h2>
-            
+            <h1 class="firstName">Cassandra<br>Cunningham</br><br>"Web Developer"</br></h1>
         </div>
 
     </header>
@@ -61,42 +66,42 @@
         
         <section>
             <div id="about-me">
-                <h3>
+                <h2>
                     ABOUT ME!
-                </h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod recusandae ullam earum? Quod culpa deleniti aperiam, voluptas sunt repellendus cumque ratione atque consequatur illum esse earum ullam necessitatibus eveniet? Iusto! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus pariatur temporibus earum quia harum nulla doloribus commodi quod maxime amet accusamus consectetur aperiam iste nihil deleniti nesciunt eum, quam quas! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque impedit accusantium dolorum commodi, non porro, debitis quidem omnis beatae, ab et perspiciatis deleniti maxime itaque assumenda architecto accusamus. Eaque, molestias.
+                </h2>
+                <p>I am currently attending a coding Bootcamp at University of Washington. Creating this profile was an extremely exciting process. I wanted to make the navigation icons tell you what the section is called when you hover over them. Once I figured out how to make this happen I had a "raise your arms in the air shouting Woohoo" moment. Every achievement, no matter how small, is something I cherish in each project. I look forward to utilizing even more skills to create a more dynamic and eye catching experience for users everywhere. Here's to the future of Cassandra Cunningham as a Web Developer!
                 </p>
             </div>
         </section>
 
         <section>
                 <div id="projects"> 
-                    <h3>
+                    <h2>
                         MY WORK
-                    </h3>
+                    </h2>
                 </div>
                 
                 <figure class="flexRow">
                     <div class="project1">
-                        <h4>Project 1</h4>
+                        <h3>Project 1</h3>
                         <a href="">
                             <img class="project1-img" src="./assets/images/project-1.jpg" alt="Placeholder photo will be updated later. Photo by Matthew Fournier on Unsplash.">
                         </a>
                     </div>
                     <div class="project">
-                        <h4>Project 2</h4>
+                        <h3>Project 2</h3>
                         <a href="">
                             <img class="project-img" src="./assets/images/project-2.jpg" alt="Placeholder photo will be updated later. Photo by Ilya Pavlov on Unsplash.">
                         </a>
                     </div>
                     <div class="project">
-                        <h4>Project 3</h4>
+                        <h3>Project 3</h3>
                         <a href="">
                             <img class="project-img" src="./assets/images/project-3.jpg" alt="Placeholder photo will be updated later. Photo by Christopher Gower on Unsplash.">
                         </a>
                     </div>
                     <div class="project">
-                        <h4>Project 4</h4>
+                        <h3>Project 4</h3>
                         <a href="">
                             <img class="project-img" src="./assets/images/project-4.jpg" alt="Placeholder photo will be updated later. Photo by AltumCode on Unsplash.">
                         </a>
@@ -107,26 +112,33 @@
         <section>
             <div id="contact">
                 
-                <h3>
+                <h2>
                     CONTACT
-                </h3>
-                <p>
-                    <b>E-mail: </b><a href="">This will be updated with a professional e-mail for myself later. My e-mails are either old from many years ago or for my small business."</a>
-                    <br><br>
-                    <b>Phone Number: </b>(253) 820-1032
-                    <br><br>
-                    <b>GitHub: </b><a href="https://github.com/cmcunningham27">github.com/cmcunningham27</a>
-                    <br><br>
-                    <b>Indeed: </b><a href="https://www.linkedin.com/in/cassandra-cunningham-a29347141">Cassandra Cunningham</a>
-                </p>
+                </h2>
+                <div class="contacts">
+                    <p>
+                        <div class="contact-links">
+                        <a href="">E-mail</a>
+                        </div>
+                        <div class="contact-links">
+                        <a href="">(253) 820-1032</a>
+                        </div>
+                        <div class="contact-links">
+                        <a href="https://github.com/cmcunningham27">GitHub</a>
+                        </div>
+                        <div class="contact-links">
+                        <a href="https://www.linkedin.com/in/cassandra-cunningham-a29347141">Indeed</a>
+                        </div>
+                    </p>
+                </div>
             </div>
         </section>
 
         <section>
             <div id="resume">
-                <h3>
+                <h2>
                     RESUME
-                </h3>
+                </h2>
                 <p>
                     Currently this section is internal. As I progress through the bootcamp, my goal is to make this section a separate external website that will be visited by potential employers. It will have all of my education (including this bootcamp), my location, etc. This will all be updated later. For now it will remain internal and just a placeholder section.
                 </p>
@@ -135,7 +147,10 @@
     </main>
 
     <footer>
-        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <div>
+            <p>Icons made by<a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            </p>
+        </div>
     </footer>
 
 </body>
