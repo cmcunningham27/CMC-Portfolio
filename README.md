@@ -17,12 +17,14 @@ To accomplish this I created a website that is responsive to many different size
 &nbsp;
 
 After I deployed the website, I wanted to see it on my cellphone. Once I did I noticed that my phone's touch-buttons were blocking the bottom icon link on the left side. I then realized that even though it may look right on the Dev Tools, that doesn't mean it will look correct on the actual device. So, that will be something to think about for future applications. 
+
 ---
 
 &nbsp;
 
 ## The following image shows how the webpage appears on a desktop
 
+&nbsp;
 &nbsp;
 
 ![website screenshot](./assets/images/website-screenshot.png)
