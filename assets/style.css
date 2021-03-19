@@ -234,6 +234,9 @@ section h2::after {
 }
 
 /*Targets and styles the contact section of the body*/
+#contact {
+    padding-bottom: 40px;
+}
 .contacts {
     display: flex;
     flex-direction: column;
@@ -264,11 +267,6 @@ section h2::after {
 .contact-links a:visited,
 .icons:visited {
     color: var(--claret);
-}
-
-/*Targets the resume section of the body*/
-#resume {
-    padding-bottom: 40px;
 }
 
 /*Targets and styles the footer section of the body*/

@@ -1,0 +1,34 @@
+:root {
+    --heading-color: #1f10eb;
+}
+
+main {
+    margin: 25px 0;
+}
+
+#intro {
+    font-family: Georgia, serif;
+    padding-right: 53px;
+}
+
+#brandStatement {
+    margin-bottom: 25px;
+}
+
+h6 {
+    color: var(--heading-color);
+    font-weight: 900;
+    font-family: Times, Times New Roman, serif;
+}
+
+
+
+#linkedIn {
+    width: 17.55px;
+    height: 15px;
+}
+
+#github {
+    width: 15px;
+    height: 15px;
+}
