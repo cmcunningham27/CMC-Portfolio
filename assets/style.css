@@ -1,14 +1,16 @@
 /*Base colors to be utilized throughout CSS*/
 :root {
     --background: url(./images/main-background.jpg);
-    --main-background: rgba(0, 139, 139, 1);
+    --main-background: rgba(53, 157, 157, 1);
     --turquoise-heading: rgba(0, 139, 139, 1);
     --white: white;
-    --white-heading: rgba(255, 255, 255, 0.5);
+    --white-heading: rgba(255, 255, 255, 0.6);
     --black: black;
     --black-background: rgba(0, 0, 0, 0.5);
+    --black-background1: rgba(0, 0, 0, 0);
     --cedar-chest: #DB504A;
-    --claret: #7D1D3F;
+    --claret: rgba(125, 29, 63, 0.9);
+    --dark-gray: #696969;
 }
 
 /*Targets the body*/
@@ -17,23 +19,6 @@ body {
     background-size: cover;
     font-size: 10px;
     
-}
-
-/*Targets the headings and paragraphs a starting size*/
-h1 {
-    font-size: 4rem;
-}
-
-h2 {
-    font-size: 3.5rem;
-}
-
-h3 {
-    font-size: 3rem;
-}
-
-p {
-    font-size: 1.5rem;
 }
 
 
@@ -101,7 +86,7 @@ footer {
 .contacts,
 .resume-p {
     background-color: var(--white-heading);
-    padding: 25px;
+    padding: 30px 40px;
     border: 2px solid var(--black);
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.92);
@@ -137,11 +122,7 @@ header {
 }
 
 .profileImage {
-    width: 200px;
-    height: 200px;
     margin-top: 50px;
-    margin-right: 30px;
-    border: 10px double var(--white);
     Border-radius: 100%;
     animation-name: largeSmall;
     animation-duration: 1s;
@@ -176,7 +157,7 @@ section h2 {
     text-shadow: 2px 2px 4px var(--black);
 }
 
-/*Adds symbold before and after each heading in the main section*/
+/* Adds symbold before and after each heading in the main section */
 section h2::before {
     content: ">>";
     margin-right: 10px;
@@ -190,36 +171,40 @@ section h2::after {
 /*Styles the My Work section of the body*/
 .flexRow {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
 
-/*Targets and styles each project*/ 
-.project1 {
+
+/* Targets and styles each project */
+.project1 { 
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1 1 100%;
     width: 80%;
     height: 65%;
-    margin-bottom: 30px;
-}
+    margin-bottom: 30px; 
+ }
 
 .project {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 46%;
-    height: 66%;
+    /* width: 46%; */
+     height: 66%;
     margin: 0 10px 30px 10px;
 }
 
 .project1:hover .project1-img ,
 .project1:hover h3,
+.project1:hover .github-btn,
 .project:hover .project-img,
-.project:hover h3 {
+.project:hover h3,
+.project:hover .github-btn{
     box-shadow: inset 0px 0px 8px var(--turquoise-heading), 0 0 15px var(--turquoise-heading);
 }
 
@@ -235,13 +220,31 @@ section h2::after {
     display: inline-block;
 }
 
+.github-btn {
+    position: relative;
+    text-align: center;
+    background-color: var(--white);
+    font-size: 3em;
+    border-color: var(--main-background);
+    border-radius: 0 0 10px 10px;
+    padding: .5rem;
+    width: 100%;
+    background-color: var(--white-heading);
+}
+
+.github-btn a {
+    text-decoration: none;
+}
+
 .project1 a .project1-img,
 .project a .project-img {
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.92);
-    border: 2px solid var(--main-background);
-    border-radius: 10px;
-}
+    border-style: solid;
+    border-color: var(--main-background);
+    border-width: 2px 2px 0 2px;
+    border-radius: 10px 10px 0 0;
+} 
 
 /*Targets and styles the contact section of the body*/
 #contact {
@@ -260,10 +263,15 @@ section h2::after {
 
 .contact-links a:link {
     color: var(--black);
+    font-weight: bold;
+}
+
+.non-link a {
+    text-decoration: none;
 }
 
 .contacts a {
-    font-size: 1.5rem;
+    font-size: 2em;
     margin: 20px;
     padding: 10px;
 }
@@ -297,21 +305,22 @@ footer p {
     font-size: 1rem;
 }
 
-/*responsivness for a Tablet*/
-@media screen and (max-width: 768px) {
-    h1, h2, h3 {
-        font-size: 3em;
+/*responsiveness for a Cell Phone*/
+@media screen and (min-width: 220px) {
+    header,
+    main,
+    footer {
+        padding-right: 4vh;
+   
+        padding-left: 18vh;
+        
     }
-    
-    .project {
-        margin: 0 5px 30px 5px;
-    }  
-}
 
-/*repsonsiveness for when the header's heading and the smaller projects*/
-@media screen and (max-width: 630px) {
+
+
     h1,
     .heading {
+        font-size: 3.5em;
         margin-right: 0px;
         background-color: var(--black-background);
         border-radius: 5px;
@@ -319,31 +328,25 @@ footer p {
         font-style: bold;
     }
     
-    .project {
-        width: 75%;
-    }
-}
-
-/*responsiveness for a Cell Phone*/
-@media screen and (max-width: 483px) {
-    h1, h2, h3 {
+    h2, 
+    h3 {
         font-size: 2em;
+        text-align: center;
     }
     
-    main {
-        padding-left: 18vh;
-    padding-right: 7vh;
-    }
-
     p, 
     .contacts a {
-        font-size: 1rem;
+        font-size: 2em;
         padding: 5px;
+    }
+    
+    .github-btn a {
+        font-size: .7em;
     }
 
     section h2::before,
     section h2::after {
-        display: none;
+        visibility: hidden;
     }
 
     .profileImage {
@@ -357,11 +360,91 @@ footer p {
         flex-direction: column;
     }
     
-    .contacts {
-        padding: 5px;
+    .project1 {
+        width: 100%;
+    }
+
+    .project{
+        width: 85%;
     }
 
     footer p {
        font-size: 1rem;
    }
+}
+
+/*repsonsiveness for when the header's heading and the smaller projects*/
+
+
+@media screen and (min-width: 471px) {
+    /*Adds symbols before and after each heading in the main section*/
+    section h2::before,
+    section h2::after {
+        visibility: visible;
+    }
+
+    h2 {
+        font-size: 2.5em
+    }
+}
+
+/*responsivness for a Tablet*/
+@media screen and (min-width: 630px) {
+    .profileImage {
+        width: 200px;
+        height: 200px;
+        margin-right: 30px;
+        border: 10px double var(--white);
+    }
+    
+    h1, h2, h3 {
+        font-size: 3em;
+        text-align: center;
+    }
+   
+    .github-btn a {
+        font-size: 1em;
+    }
+
+    .project {
+        margin: 0 5px 30px 5px;
+    }  
+    .flexRow {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    /*Targets the headings and paragraphs a starting size*/
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    p,
+    .contacts a {
+        font-size: 3em;
+    }
+
+    .project {
+        width: 46%;
+    }
+
+    .flexRow {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 970px) {
+    h1,
+    .heading {
+        background-color: var(--black-background1);
+    }
 }
