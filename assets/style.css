@@ -86,10 +86,15 @@ footer {
 .contacts,
 .resume-p {
     background-color: var(--white-heading);
-    padding: 30px 40px;
+    padding: 25px 35px;
     border: 2px solid var(--black);
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.92);
+}
+
+.aboutMe-p {
+    width: 75%;
+    margin: auto;
 }
 
 /*Targets and styles the header*/
@@ -171,7 +176,6 @@ section h2::after {
 /*Styles the My Work section of the body*/
 .flexRow {
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
@@ -180,12 +184,10 @@ section h2::after {
 
 /* Targets and styles each project */
 .project1 { 
-    
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1 1 100%;
-    width: 80%;
     height: 65%;
     margin-bottom: 30px; 
  }
@@ -194,8 +196,7 @@ section h2::after {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: 46%; */
-     height: 66%;
+    height: 66%;
     margin: 0 10px 30px 10px;
 }
 
@@ -223,13 +224,13 @@ section h2::after {
 .github-btn {
     position: relative;
     text-align: center;
-    background-color: var(--white);
+    background-color: var(--white-heading);
     font-size: 3em;
     border-color: var(--main-background);
+    border-top: none;
     border-radius: 0 0 10px 10px;
     padding: .5rem;
     width: 100%;
-    background-color: var(--white-heading);
 }
 
 .github-btn a {
@@ -248,17 +249,18 @@ section h2::after {
 
 /*Targets and styles the contact section of the body*/
 #contact {
-    padding-bottom: 40px;
-}
-.contacts {
+    padding-bottom: 80px;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: auto; 
 }
 
 .contact-links {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .contact-links a:link {
@@ -278,12 +280,16 @@ section h2::after {
 
 /*Lets the user know when they have hovered and visited links*/
 .contact-links a:hover,
-.icons:hover {
+.icons:hover,
+.project1 a:hover, 
+.project a:hover{
     color: var(--turquoise-heading);
 }
 
 .contact-links a:visited,
-.icons:visited {
+.icons:visited,
+.project1
+.project a:visited {
     color: var(--claret);
 }
 
@@ -305,18 +311,14 @@ footer p {
     font-size: 1rem;
 }
 
-/*responsiveness for a Cell Phone*/
+/*makes font smaller as screen has a more narrow width, hides the symbols to section headings, and dimensions of profile image smaller*/
 @media screen and (min-width: 220px) {
     header,
     main,
     footer {
         padding-right: 4vh;
-   
         padding-left: 18vh;
-        
     }
-
-
 
     h1,
     .heading {
@@ -361,11 +363,11 @@ footer p {
     }
     
     .project1 {
-        width: 100%;
+        width: 80%;
     }
 
     .project{
-        width: 85%;
+        width: 70%;
     }
 
     footer p {
@@ -373,11 +375,8 @@ footer p {
    }
 }
 
-/*repsonsiveness for when the header's heading and the smaller projects*/
-
-
+/*makes symbols visible to headings and changes font size for project headings*/
 @media screen and (min-width: 471px) {
-    /*Adds symbols before and after each heading in the main section*/
     section h2::before,
     section h2::after {
         visibility: visible;
@@ -388,7 +387,7 @@ footer p {
     }
 }
 
-/*responsivness for a Tablet*/
+/*makes size larger for multiple elements and fonts*/
 @media screen and (min-width: 630px) {
     .profileImage {
         width: 200px;
@@ -397,7 +396,10 @@ footer p {
         border: 10px double var(--white);
     }
     
-    h1, h2, h3 {
+    h1, 
+    h2, 
+    .heading,
+    .title {
         font-size: 3em;
         text-align: center;
     }
@@ -409,13 +411,17 @@ footer p {
     .project {
         margin: 0 5px 30px 5px;
     }  
-    .flexRow {
-        flex-direction: column;
-    }
 }
 
+/*makes fonts larger as screen becomes larger and switches projects from column to row direction*/
 @media screen and (min-width: 850px) {
-    /*Targets the headings and paragraphs a starting size*/
+    header,
+    main,
+    footer {
+        padding-right: 10vh;
+        padding-left: 23vh;
+    }
+    
     h1 {
         font-size: 4rem;
     }
@@ -424,13 +430,8 @@ footer p {
         font-size: 3.5rem;
     }
 
-    h3 {
+    .heading {
         font-size: 3rem;
-    }
-
-    p,
-    .contacts a {
-        font-size: 3em;
     }
 
     .project {
@@ -442,9 +443,16 @@ footer p {
     }
 }
 
+/*removes background color of header text since it is on a darker background*/
 @media screen and (min-width: 970px) {
     h1,
     .heading {
         background-color: var(--black-background1);
+    }
+}
+
+@media screen and (min-width: 1085px) {
+    .title {
+        font-size: 3rem;
     }
 }
