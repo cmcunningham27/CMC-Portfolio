@@ -1,7 +1,9 @@
 # CMC-Portfolio
 
 ## About the Project
-![website screenshot](./assets/images/website-screenshot.png)
+![Profile Screenshot](./assets/images/Screenshot_Profile.png)
+![Profile Screenshot](./assets/images/Screenshot_Projects.png)
+![Profile Screenshot](./assets/images/Screenshot_Resume.png)
 As I work towards becoming a professional Web Developer, I wanted to create an online Portfolio that showcases applications I have worked on up to now. I will continue to add to my Portfolio in my future as there will always be something new to learn.
 
 This will be important as I begin to apply for a permanent careed in Web Developing. Future employers will need to see the skills I have and how I apply the knowledge I gained in the UW Bootcamp and on my own. 
