@@ -1,4 +1,5 @@
 # CMC-Portfolio
+![License: MIT](https://img.shields.io/badge/License-MIT-Red.svg)
 
 ## About the Project
 ![Profile Screenshot](./assets/images/Screenshot_Profile.png)
@@ -16,6 +17,7 @@ After I deployed the website, I wanted to see it on my cellphone. Once I did I n
 ## Table of Contents
 * [Technologies](#technologies)
 * [Links](#links)
+* [License](#license)
 * [Credits](#credits)
 ---
 ## Technologies
@@ -28,6 +30,9 @@ After I deployed the website, I wanted to see it on my cellphone. Once I did I n
 [GitHub Repository URL](https://github.com/cmcunningham27/CMC-Portfolio)
 
 ---
+## License
+This project is licensed under the MIT license.
+
 ## Credits
 Cassandra Cunningham, https://github.com/cmcunningham27
 
