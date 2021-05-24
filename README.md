@@ -9,6 +9,7 @@ This will be important as I begin to apply for a permanent careed in Web Develop
 To accomplish this I created a website that is responsive to many different sized screens; created internal and external links to information about myself, how to contact me, my resume, LinkedIn, GitHub, and my many projects. During the time it took to create a website I can be proud of, I challenged myself to try new techniques (i.e. changing and icon into a word when hoverd) that gave me a couple "Woohoo!" moments. 
 
 After I deployed the website, I wanted to see it on my cellphone. Once I did I noticed that my phone's touch-buttons were blocking the bottom icon link on the left side. I then realized that even though it may look right on the Dev Tools, that doesn't mean it will look correct on the actual device. So, that will be something to think about for future applications. 
+
 ---
 ## Table of Contents
 * [Technologies](#technologies)
@@ -23,6 +24,7 @@ After I deployed the website, I wanted to see it on my cellphone. Once I did I n
 [Deployed Application URL](https://cmcunningham27.github.io/CMC-Portfolio/)
 
 [GitHub Repository URL](https://github.com/cmcunningham27/CMC-Portfolio)
+
 ---
 ## Credits
 Cassandra Cunningham, https://github.com/cmcunningham27
